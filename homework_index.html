@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div {
+            border: 1px solid yellowgreen;
+        }
+    
+        header,
+        footer {
+            flex: 0 0 content;
+        }
+    
+        header {
+            border: 1px solid orangered;
+            display: flex;
+            justify-content: center;
+        }
+
+        body {
+            display: flex;
+            flex-flow: column;
+            justify-content: stretch;   
+        }
+    
+        main {
+            border: 1px solid orangered;
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid blue;
+            min-height: 60vh;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px 0;
+            gap: 10px;
+            box-sizing: border-box;
+        }
+    
+        .title {
+            border: 1px solid red;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-basis: calc(100%/3);
+            width: 50vw;
+        }
+    
+        .box {
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 750px;
+            height: 60px;
+        }
+    
+        .box-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center;
+            width: 49%;
+            height: 100%;
+        }
+
+        .item-special {
+            display: flex;
+            width: 750px;
+            height: 60px;
+            justify-content:center;
+            align-items:center;
+        }
+    
+        aside {
+            display: flex;
+            flex-flow: row;
+        }
+    
+        .aside {
+            display:flex;
+            width: 40vh;
+            justify-content:center;
+        }
+
+        footer {
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            flex-basis: 60px;
+        }
+
+        .foot {
+            border: 1px solid red;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-basis: 150px; 
+            margin: 10px 0 10px 0; 
+        }
+        
+    </style>
+</head>
+
+<body>  
+    <header><h4>Шапка Страницы</h4></header>
+
+    <main class="main">
+        <section class="container">
+            <h4 class="title">[Основная часть]</h4>
+            <div class="box">
+                <div id="one-item" class="box-item">Еще одно</div>
+                <div id="two-item" class="box-item">Еще Второе</div>
+            </div>
+            <div class="item-special">И Третье</div>
+        </section>
+
+    <aside>
+        <h4 class="aside">
+            [Боковая область]
+        </h4>
+    </aside>
+    </main>
+
+    <footer>
+        <div class="foot">[Секция футера 1]</div>
+        <div class="foot">[Секция футера 2]</div>
+        <div class="foot">[Секция футера 3]</div>
+        <div class="foot">[Секция футера 4]</div>
+    </footer>
+</body>
+
+</html>
