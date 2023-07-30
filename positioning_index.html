@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+/*header*/
+.header {
+    border: 1px solid #000;
+    background: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 1397px;
+    height: 112px;
+    flex-shrink: 0;   
+}
+
+/*main*/
+main {
+    display: flex;
+    flex-direction: row; 
+}
+
+/*section-left*/
+
+.container-l ,
+.container-r {
+    display: flex;
+    width: calc(1397px*1/2);
+flex-shrink: 0;
+}
+
+.container-l {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 10px 
+}
+
+.container-r {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 10px
+}
+.flex { 
+    border: 1px solid #000;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#first-image {
+    display: flex;
+    width: 656px;
+    height: 384px;
+    flex-shrink: 0;
+    background-image: url(./assets/images/backg-image-l.svg);
+    background-size: 656.441px 383.703px;
+}
+
+.line {
+    border: 1px solid #000;
+    width: 100%;
+    flex-basis: 50px;
+}
+
+.flex-2 {   
+    display: flex;
+    flex-shrink: 0;
+}
+
+#second-image {
+    display: flex;
+    width: 657px;
+    height: 439px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+
+/*section-left end*/
+
+/*section-right*/
+.flex-3 {
+    border: 1px solid #000;
+    display: flex;
+    height: calc(384px/2);
+    flex-shrink: 0;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+}
+
+.flex-4 {
+    display: flex;
+    flex-shrink: 0;
+}
+
+#third-image {
+    width: 656px;
+    height: 693px;
+flex-shrink: 0;
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+<nav class="header">
+    <button>GO BACK</button>
+    <a href="...">STORY</a>
+    <a href="...">SHOP</a>
+    <img src="./assets/images/logo.svg" alt="logo">
+    <a href="...">CONTACT</a>
+    <a href="...">WHOLESALE</a>
+    <button>CLONE</button>
+</nav>
+    </header>
+
+    <main>
+
+        <div class="container-l">
+            
+            <div  class="flex">
+                <img id="first-image" src="./assets/images/frnt-image-l.svg" alt="image">
+            </div>
+
+            <div class="line">
+            PUT SOME PEPPER IN YOUR BELLY
+                <img src="./assets/images/pepper.svg" alt="pepper">
+            PUT SOME PEPPER IN YOUR BELLY
+                <img src="./assets/images/pepper.svg" alt="pepper">
+            </div>
+
+            <div class="flex-2">
+                <img id="second-image" src="./assets/images/second-image-l.png" alt="img_bottle">
+            </div>
+        </div>
+
+        <div class="container-r">
+            <div class="flex-3">
+                THE FIRST HOT SAUCE MADE FOR COFFEE
+            </div>
+            <div class="flex-4">
+                <img id="third-image" src="./assets/images/image-r.png" alt="img_bottle">
+            </div>
+
+        </div>
+
+        
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
